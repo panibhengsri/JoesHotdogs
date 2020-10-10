@@ -1,4 +1,4 @@
-//<script src="myscripts.js"></script>
+<script src="myscripts.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -12,13 +12,15 @@
 
 <script>
 function myFunction() {
-    numHotdogs = prompt("How many hotdogs?","1");
-    numFries = prompt("How many fries?","1");
-    numSodas = prompt("How many sodas?","1");
+    var numHotdogs = prompt("How many hotdogs?","1");
+    var numFries = prompt("How many fries?","1");
+    var numSodas = prompt("How many sodas?","1");
 
     document.getElementById("demo").innerHTML = "Number of Hotdogs: " + numHotdogs;
     document.getElementById("demo").innerHTML = "Number of Fries: " + numFries;
     document.getElementById("demo").innerHTML = "Number of Sodas: " + numSodas;
+
+
 }
 </script>
 
