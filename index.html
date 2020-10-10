@@ -24,16 +24,16 @@
         var pBT = pH + pF + pS;
         var priceBeforeT = pBT.toFixed(2);
         var st, subtotal;
+
+        st = pBT;
+        subtotal = priceBeforeT;
                 
         if (pBT >= 20){
             document.write("You qualified for our 10% discount.");
             document.write("<br>");
             st = pBT * 0.9;
             subtotal = st.toFixed(2);
-        } else {
-            st = pBt;
-            subtotal = priceBeforeT
-        }
+        }  
                 
         document.write("Subtotal: $" + subtotal);
         document.write("<br>");
