@@ -6,6 +6,7 @@
 <h2>Your Order</h2>
 
 <script>
+        document.write("<h1>Welome to Joe's Hotdogs!</h1><h2>Your Order</h2>");
         var numHotdogs = prompt("How many hotdogs?","1");
         var numFries = prompt("How many fries?","1");
         var numSodas = prompt("How many sodas?","1");
@@ -13,21 +14,21 @@
         var priceFries = numFries * 2;
         var priceSodas = numSodas * 1.50;
                 
-        document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs);
-        document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries);
-        document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas);
+        document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs + "\n");
+        document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries + "\n");
+        document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas + "\n");
                 
         var priceBeforeT = priceHotdogs + priceFries + priceSodas;
         var subtotal;
                 
         if (priceBeforeT >= 20){
-            document.write("You qualified for our 10% discount.");
+            document.write("You qualified for our 10% discount. \n");
             subtotal = priceBeforeT * 0.9;
         }
                 
-        document.write("Subtotal: $" + subtotal);
+        document.write("Subtotal: $" + subtotal + "\n");
         var mealstax = subtotal * 0.0625; 
-        document.write("Meals Tax: $" + mealstax);
+        document.write("Meals Tax: $" + mealstax + "\n");
         var total = subtotal + mealstax;
         document.write("Total: $" + total);
 </script>
