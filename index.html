@@ -15,11 +15,11 @@
         var priceSodas = pS.toFixed(2);
                 
         document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs);
-        document.write("\n");
+        document.write("<br>");
         document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries);
-        document.write("\n");
+        document.write("<br>");
         document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas);
-        document.write("\n");
+        document.write("<br>");
                 
         var pBT = pH + pF + pS;
         var priceBeforeT = pBT.toFixed(2);
@@ -27,7 +27,7 @@
                 
         if (pBT >= 20){
             document.write("You qualified for our 10% discount.");
-            document.write("\n");
+            document.write("<br>");
             st = pBT * 0.9;
             subtotal = st.toFixed(2);
         } else {
@@ -35,15 +35,15 @@
         }
                 
         document.write("Subtotal: $" + subtotal);
-        document.write("\n");
+        document.write("<br>");
         var mt = subtotal * 0.0625; 
         var mealstax = mt.toFixed(2);
         document.write("Meals Tax: $" + mealstax);
-        document.write("\n");
+        document.write("<br>");
         var tt = subtotal + mealstax;
         var total = tt.toFixed(2);
         document.write("Total: $" + total);
-        document.write("\n");
+        document.write("<br>");
     </script>
     </body>
 </html>
