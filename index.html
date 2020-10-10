@@ -13,29 +13,36 @@
         var pS = numSodas * 1.50;
         var priceSodas = pS.toFixed(2);
                 
-        document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs + "\n");
-        document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries + "\n");
-        document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas + "\n");
+        document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs);
+        document.write("\n");
+        document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries);
+        document.write("\n");
+        document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas);
+        document.write("\n");
                 
         var pBT = pH + pF + pS;
         var priceBeforeT = pBT.toFixed(2);
         var st, subtotal;
                 
         if (pBT >= 20){
-            document.write("You qualified for our 10% discount. \n");
+            document.write("You qualified for our 10% discount.");
+            document.write("\n");
             st = pBT * 0.9;
             subtotal = st.toFixed(2);
         } else {
             subtotal = priceBeforeT
         }
                 
-        document.write("Subtotal: $" + subtotal + "\n");
+        document.write("Subtotal: $" + subtotal);
+        document.write("\n");
         var mt = subtotal * 0.0625; 
         var mealstax = mt.toFixed(2);
-        document.write("Meals Tax: $" + mealstax + "\n");
+        document.write("Meals Tax: $" + mealstax);
+        document.write("\n");
         var tt = subtotal + mealstax;
         var total = tt.toFixed(2);
         document.write("Total: $" + total);
+        document.write("\n");
 </script>
 
 </body>
