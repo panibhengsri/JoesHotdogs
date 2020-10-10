@@ -13,23 +13,23 @@
         var priceFries = numFries * 2;
         var priceSodas = numSodas * 1.50;
                 
-        document.write = "# Hotdogs: " + numHotdogs + " at $3.25 is " + priceHotdogs;
-        document.write = "# Fries: " + numFries + " at $2.00 is " + priceFries;
-        document.write = "# Sodas: " + numSodas + " at $1.50 is " + priceSodas;
+        document.write("# Hotdogs: " + numHotdogs + " at $3.25 is $" + priceHotdogs);
+        document.write("# Fries: " + numFries + " at $2.00 is $" + priceFries);
+        document.write("# Sodas: " + numSodas + " at $1.50 is $" + priceSodas);
                 
         var priceBeforeT = priceHotdogs + priceFries + priceSodas;
         var subtotal;
                 
         if (priceBeforeT >= 20){
-            document.write = "You qualified for our 10% discount.";
+            document.write("You qualified for our 10% discount.");
             subtotal = priceBeforeT * 0.9;
         }
                 
-        document.write = "Subtotal: $" + subtotal;
+        document.write("Subtotal: $" + subtotal);
         var mealstax = subtotal * 0.0625; 
-        document.write = "Meals Tax: $" + mealstax;
+        document.write("Meals Tax: $" + mealstax);
         var total = subtotal + mealstax;
-        document.write = "Total: $" + total;
+        document.write("Total: $" + total);
 </script>
 
 </body>
