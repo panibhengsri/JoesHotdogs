@@ -1,4 +1,5 @@
-<script src="myscripts.js"></script>
+//<script src="myscripts.js"></script>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -11,7 +12,13 @@
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+    numHotdogs = prompt("How many hotdogs?","1");
+    numFries = prompt("How many fries?","1");
+    numSodas = prompt("How many sodas?","1");
+
+    document.getElementById("demo").innerHTML = "Number of Hotdogs: " + numHotdogs;
+    document.getElementById("demo").innerHTML = "Number of Fries: " + numFries;
+    document.getElementById("demo").innerHTML = "Number of Sodas: " + numSodas;
 }
 </script>
 

@@ -1,11 +1,11 @@
 
 var numHotdogs, numFries, numSodas
 
-numHotdogs = prompt("How many hotdogs?");
+numHotdogs = prompt("How many hotdogs?","1");
 
-numFries = prompt("How many fries?");
+numFries = prompt("How many fries?","1");
 
-numSodas = prompt("How many sodas?");
+numSodas = prompt("How many sodas?","1");
 
 alert("this is an alert");
 
