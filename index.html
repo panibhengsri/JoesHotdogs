@@ -5,9 +5,6 @@
 <h1>Welome to Joe's Hotdogs!</h1>
 <h2>Your Order</h2>
 
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
-
 <script>
 function myFunction() {
     var numHotdogs = prompt("How many hotdogs?","1");
@@ -17,23 +14,23 @@ function myFunction() {
     var priceFries = numFries * 2;
     var priceSodas = numSodas * 1.50;
 
-    document.getElementById("demo").innerHTML = "# Hotdogs: " + numHotdogs + " at $3.25 is " + priceHotdogs;
-    document.getElementById("demo").innerHTML = "# Fries: " + numFries + " at $2.00 is " + priceFries;
-    document.getElementById("demo").innerHTML = "# Sodas: " + numSodas + " at $1.50 is " + priceSodas;
+    document.write = "# Hotdogs: " + numHotdogs + " at $3.25 is " + priceHotdogs;
+    document.write = "# Fries: " + numFries + " at $2.00 is " + priceFries;
+    document.write = "# Sodas: " + numSodas + " at $1.50 is " + priceSodas;
 
     var priceBeforeT = priceHotdogs + priceFries + priceSodas;
     var subtotal;
 
     if (priceBeforeT >= 20){
-        document.getElementById("demo").innerHTML = "You qualified for our 10% discount.";
+        document.write = "You qualified for our 10% discount.";
         subtotal = priceBeforeT * 0.9;
     }
 
-    document.getElementById("demo").innerHTML = "Subtotal: $" + subtotal;
+    document.write = "Subtotal: $" + subtotal;
     var mealstax = subtotal * 0.0625; 
-    document.getElementById("demo").innerHTML = "Meals Tax: $" + mealstax;
+    document.write = "Meals Tax: $" + mealstax;
     var total = subtotal + mealstax;
-    document.getElementById("demo").innerHTML = "Total: $" + total;
+    document.write = "Total: $" + total;
 }
 </script>
 
